@@ -1,55 +1,241 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modul 1 - Komplettering</title>
-    <link href="style.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
-        rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
-        crossorigin="anonymous">
-  </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 1 - Bootstrap</title>
 
-  <body>
-    <div id="wrapper">
-      <nav>
+    <link href="style.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+          crossorigin="anonymous">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <nav>
         <div id="menu-btn">Meny</div>
+
         <ul>
-          <li><a href="index.html">Start</a></li>
-          <li><a href="images.html">Bilder</a></li>
-          <li><a href="bootstrap.html">Bootstrap</a></li>
-          <li>
-            <select id="style-picker">
-              <option value="standard">Standard</option>
-              <option value="blue">Blå</option>
-              <option value="red">Röd</option>
-              <option value="green">Grön</option>
-            </select>
-          </li>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="images.html">Bilder</a></li>
+            <li><a href="bootstrap.html">Bootstrap</a></li>
+
+            <li>
+                <select id="style-picker">
+                    <option value="standard">Standard</option>
+                    <option value="blue">Blå</option>
+                    <option value="red">Röd</option>
+                    <option value="green">Grön</option>
+                </select>
+            </li>
         </ul>
-      </nav>
+    </nav>
 
-      <header>
+    <header>
         <article>
-          <img src="images/logo.jpg" alt="Logo" />
-          <h1>Modul 1</h1>
-          <aside>
-            <h2>Komplettering</h2>
-            <p>Nikola Rajic</p>
-          </aside>
-        </article>
-      </header>
+            <img src="images/logo.jpg" alt="Logo">
 
-      <main id="bootstrap">
-      </main>
-      <aside></aside>
-      <footer>En typisk sidfot för en inlämningsuppgift</footer>
+            <h1>Modul 1</h1>
+
+            <aside>
+                <h2>Komplettering</h2>
+                <p>Nikola Rajic</p>
+            </aside>
+        </article>
+    </header>
+
+    <main id="bootstrap">
+
+        <section class="bootstrap-grid">
+
+            <!-- FORM -->
+
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                    >
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="check"
+                    >
+
+                    <label
+                        class="form-check-label"
+                        for="check">
+                        Check me out
+                    </label>
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary">
+                    Submit
+                </button>
+            </form>
+
+            <!-- LIST -->
+
+            <ul class="list-group">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+            </ul>
+
+            <!-- CARD -->
+
+            <div class="card">
+
+                <img
+                    src="images/image-placeholder.png"
+                    class="card-img-top"
+                    alt="Placeholder image"
+                >
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Card title
+                    </h5>
+
+                    <p class="card-text">
+                        Some quick example text to build
+                        on the card title and make up
+                        the bulk of the card's content.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="btn btn-primary">
+                        Go somewhere
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CAROUSEL -->
+
+        <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+
+        <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active">
+        </button>
+
+        <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1">
+        </button>
+
+        <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2">
+        </button>
+
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z/QniRRuqmkAmiTHERE" 
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-  </body>
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img
+                src="images/logo.jpg"
+                class="d-block w-100"
+                alt="Logo">
+        </div>
+
+        <div class="carousel-item">
+            <img
+                src="images/logo.jpg"
+                class="d-block w-100"
+                alt="Logo">
+        </div>
+
+        <div class="carousel-item">
+            <img
+                src="images/logo.jpg"
+                class="d-block w-100"
+                alt="Logo">
+        </div>
+
+    </div>
+
+    <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+
+    </button>
+
+    <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
+
+    </button>
+
+</div>
+
+    </main>
+
+    <footer>
+        En typisk sidfot för en inlämningsuppgift
+    </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z/QniRRuqmkAmiTHERE"
+        crossorigin="anonymous">
+</script>
+
+<script src="script.js"></script>
+
+</body>
 </html>

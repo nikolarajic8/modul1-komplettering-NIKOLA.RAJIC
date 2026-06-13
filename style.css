@@ -211,3 +211,88 @@ footer {
 
     padding: 25px;
 }
+
+/* =========================
+   BOOTSTRAP PAGE
+========================= */
+
+main#bootstrap {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0 30px;
+    
+}
+
+.bootstrap-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 25px;
+
+    align-items: start;
+
+    padding-bottom: 30px;
+
+    border-bottom: 2px solid #b5b5b5;
+}
+
+/* FORM */
+
+main#bootstrap form {
+    background: white;
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+}
+
+/* LIST */
+
+main#bootstrap .list-group {
+    background: white;
+
+    border: 1px solid #ccc;
+}
+
+/* CARD */
+
+main#bootstrap .card {
+    background: white;
+
+    border: 1px solid #ccc;
+}
+
+main#bootstrap .card img {
+    width: 70%;
+
+    margin: 15px auto 0;
+
+    display: block;
+}
+
+/* CAROUSEL */
+
+main#bootstrap .carousel {
+    width: 400px;   /* mindre än tidigare 500px */
+
+    margin: 30px auto 0;
+
+    background: white;
+
+    border: 1px solid #ccc;
+
+    padding: 15px;
+}
+
+main#bootstrap .carousel img {
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+}
+
+/* PRICKAR */
+
+.carousel-indicators button {
+    background-color: black !important;
+}
