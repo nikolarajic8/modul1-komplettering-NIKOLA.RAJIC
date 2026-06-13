@@ -53,3 +53,250 @@ main#bootstrap .carousel img {
 .carousel-indicators button {
     background-color: black !important;
 }
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+
+    #wrapper {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        min-height: 100vh;
+        background: #d9d9d9;
+    }
+
+    header {
+        grid-column: 1;
+        grid-row: 1;
+        width: 180px;
+        max-width: none;
+        margin: 0;
+        background: white;
+    }
+
+    header article {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header h1 {
+        margin: 15px 0 0;
+        font-size: 1.5rem;
+    }
+
+    header aside {
+        margin: 18px 0 0;
+        text-align: center;
+    }
+
+    header aside h2 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        grid-column: 1;
+        grid-row: 2;
+        width: 180px;
+        background: white;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: column !important;
+        max-width: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    nav a,
+    #style-picker {
+        width: 100%;
+        border-left: none;
+        border-top: 6px solid limegreen;
+        padding: 16px 0;
+        text-align: center;
+        background: white;
+    }
+
+    main#bootstrap {
+        grid-column: 2;
+        grid-row: 1 / span 4;
+        max-width: none;
+        width: 100%;
+        padding: 20px;
+        background: #d9d9d9;
+    }
+
+    .bootstrap-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        align-items: start;
+        padding-bottom: 25px;
+        border-bottom: 2px solid #b5b5b5;
+    }
+
+    main#bootstrap form {
+        grid-column: 1;
+        grid-row: 1;
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    main#bootstrap .list-group {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    main#bootstrap .card {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+
+    main#bootstrap .card img {
+        width: 65%;
+        margin: 15px auto 0;
+        display: block;
+    }
+
+    main#bootstrap .carousel {
+        width: 100%;
+        max-width: 600px;
+        margin: 25px auto 0;
+    }
+
+    footer {
+        grid-column: 1;
+        grid-row: 4;
+        width: 180px;
+        margin-top: 0;
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+/* MOBIL - BOOTSTRAP */
+@media screen and (max-width: 767px) {
+
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        order: 1;
+        width: 100%;
+        margin: 0;
+    }
+
+    header article {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    header h1 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    header aside {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    nav {
+        order: 2;
+        background: white;
+    }
+
+    #menu-btn {
+        display: block;
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a,
+    #style-picker {
+        border-left: none;
+        border-top: 5px solid limegreen;
+    }
+
+    main#bootstrap {
+        order: 3;
+        padding: 15px;
+    }
+
+    .bootstrap-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border-bottom: none;
+    }
+
+    main#bootstrap form {
+        width: 100%;
+    }
+
+    main#bootstrap .list-group {
+        width: 100%;
+    }
+
+    main#bootstrap .card {
+        width: 100%;
+        max-width: none;
+    }
+
+    main#bootstrap .card img {
+        width: 60%;
+        margin: 15px auto 0;
+        display: block;
+    }
+
+    main#bootstrap .carousel {
+        width: 100%;
+        max-width: none;
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    main#bootstrap .carousel img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    footer {
+        order: 4;
+    }
+}
