@@ -12,6 +12,19 @@ body {
 
 #wrapper {
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #d9d9d9;
+}
+
+footer {
+    margin-top: auto;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
 }
 
 nav {
@@ -25,10 +38,8 @@ nav {
 nav ul {
     max-width: 1200px;
     margin: auto;
-
     display: flex;
     justify-content: center;
-
     list-style: none;
 }
 
@@ -40,19 +51,13 @@ nav li {
 nav a, #style-picker {
     display: block;
     width: 100%;
-
     padding: 25px 0;
-
     text-decoration: none;
     color: black;
-
     background: white;
-
     border: none;
     border-left: 5px solid limegreen;
-
     outline: none;
-
     font-size: 16px;
     font-family: inherit;
 }
@@ -69,21 +74,19 @@ nav a:hover,
 header {
     max-width: 1200px;
     margin: 30px auto 20px;
+    width: 100%;
 }
 
 header article {
     background: white;
-
     display: flex;
     align-items: center;
-
     padding: 25px 30px;
 }
 
 header img {
     width: 90px;
     height: 90px;
-
     border-radius: 50%;
     object-fit: cover;
 }
@@ -107,19 +110,18 @@ header aside p {
     color: #666;
 }
 
+/* INDEX */
 main#index {
     max-width: 1200px;
     margin: auto;
-
-    background: #d9d9d9;
+    width: 100%;
+    flex: 1;
 }
 
 main#index article {
     display: flex;
     align-items: center;
-
     padding: 40px;
-
     border-top: 8px solid #888;
 }
 
@@ -130,7 +132,6 @@ main#index article:first-child {
 main#index article img {
     width: 170px;
     height: 170px;
-
     border-radius: 50%;
     object-fit: cover;
 }
@@ -157,142 +158,82 @@ main#index article:nth-child(2) section {
     margin-right: 35px;
 }
 
-
+/* IMAGES */
 main#images {
     max-width: 1200px;
     margin: auto;
-
-    background: #d9d9d9;
-
+    width: 100%;
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
     gap: 15px;
-
     padding: 20px 0;
 }
 
 main#images figure {
     background: white;
-
     border: 1px solid #ccc;
 }
 
 main#images figure img {
     width: 100%;
-
     display: block;
-
     aspect-ratio: 1 / 1;
     object-fit: cover;
-
     padding: 10px;
 }
 
 main#images figcaption {
     background: black;
     color: white;
-
     text-align: center;
-
     padding: 5px;
-
     font-size: 14px;
 }
 
-
-footer {
-    margin-top: 30px;
-
-    background: black;
-    color: white;
-
-    text-align: center;
-
-    padding: 25px;
-}
-
-/* =========================
-   BOOTSTRAP PAGE
-========================= */
-
+/* BOOTSTRAP */
 main#bootstrap {
     max-width: 1200px;
     margin: auto;
+    width: 100%;
+    flex: 1;
     padding: 20px 0 30px;
-    
 }
 
 .bootstrap-grid {
     display: grid;
-
     grid-template-columns: 1fr 1fr 1fr;
-
     gap: 25px;
-
     align-items: start;
-
     padding-bottom: 30px;
-
     border-bottom: 2px solid #b5b5b5;
 }
 
-/* FORM */
-
 main#bootstrap form {
     background: white;
-
     padding: 15px;
-
     border: 1px solid #ccc;
 }
-
-/* LIST */
 
 main#bootstrap .list-group {
     background: white;
-
     border: 1px solid #ccc;
 }
 
-/* CARD */
-
 main#bootstrap .card {
     background: white;
-
     border: 1px solid #ccc;
 }
 
 main#bootstrap .card img {
     width: 70%;
-
     margin: 15px auto 0;
-
     display: block;
 }
 
-/* CAROUSEL */
-
 main#bootstrap .carousel {
-    width: 400px;   /* mindre än tidigare 500px */
-
+    width: 400px;
     margin: 30px auto 0;
-
     background: white;
-
-    border: 1px solid #ccc;
-
-    padding: 15px;
-}
-
-main#bootstrap .carousel img {
-    aspect-ratio: 1 / 1;
-
-    object-fit: cover;
-}
-
-/* PRICKAR */
-
-.carousel-indicators button {
-    background-color: black !important;
+    border: 1px
 }
