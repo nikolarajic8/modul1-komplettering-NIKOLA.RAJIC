@@ -1,0 +1,31 @@
+main#images {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px 0;
+}
+
+main#images figure {
+    background: white;
+    border: 1px solid #ccc;
+}
+
+main#images figure img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    padding: 10px;
+}
+
+main#images figcaption {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+}

@@ -1,0 +1,55 @@
+main#bootstrap {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    flex: 1;
+    padding: 20px 0 30px;
+}
+
+.bootstrap-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #b5b5b5;
+}
+
+main#bootstrap form {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+main#bootstrap .list-group {
+    background: white;
+    border: 1px solid #ccc;
+}
+
+main#bootstrap .card {
+    background: white;
+    border: 1px solid #ccc;
+}
+
+main#bootstrap .card img {
+    width: 70%;
+    margin: 15px auto 0;
+    display: block;
+}
+
+main#bootstrap .carousel {
+    width: 400px;
+    margin: 30px auto 0;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+main#bootstrap .carousel img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.carousel-indicators button {
+    background-color: black !important;
+}
