@@ -48,6 +48,10 @@ nav li {
     text-align: center;
 }
 
+nav li:first-child a {
+    border-left: none;
+}
+
 nav a, #style-picker {
     display: block;
     width: 100%;
